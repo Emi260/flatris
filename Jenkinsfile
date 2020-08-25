@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('imp') {
+      steps {
+        input(message: 'estas de acuerdo', ok: 'Obvio')
+      }
+    }
+
   }
 }
